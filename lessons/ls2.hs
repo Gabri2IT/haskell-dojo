@@ -35,5 +35,10 @@ data StarterPokemon
 -- Unit: the interpreter understand from the context
 data Unit = Unit
 
-x :: Unit   -- this the description
-x =  Unit  -- this the value, the interpreter understands it
+-- this the description
+y :: Unit   
+-- this is the value, the interpreter understands it
+y = Unit   
+
+
+-- ++ concatenate strings
