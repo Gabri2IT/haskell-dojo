@@ -16,3 +16,24 @@ pikachu = ("Pikachu", 25)
 numbers :: [Int]
 numbers = [19, -21, 7, 8, 598, -47732, 1, 4]
 
+isPositive :: Int 
+isPositive x = [x*2 | x <- [1..10], x*2 >= 12]  
+
+isEven x =
+    if mod x 2 == 0
+    then True
+    else False
+
+-- Variant Type
+
+data StarterPokemon
+    = Bulbasaur
+    | Charmander
+    |Squirtle
+
+
+-- Unit: the interpreter understand from the context
+data Unit = Unit
+
+x :: Unit   -- this the description
+x =  Unit  -- this the value, the interpreter understands it

@@ -23,10 +23,10 @@ a :: [Char]
 a = [ 'H', 'o', 'u', 's', 'e']
 
 -- in Haskell only it is allowed to have a string as a list of Char
-c : [String]
-c=  "House"
+c :: [String]
+c =  "House"
 
-d : [Char]
+d :: [Char]
 d =  "House"
 
 -- I can define my own data Type
