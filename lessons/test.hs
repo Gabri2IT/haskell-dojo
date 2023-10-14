@@ -1,12 +1,4 @@
 
-_SIZE_ :: Int
-_SIZE_ = 3
-
-
-d :: [Char]
-d =  "House"
-
-
 -- boomBangs :: Integral a => [a] -> [[Char]]
 -- boomBangs x = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
 --   ghci> boomBangs [7..13]  
@@ -74,3 +66,10 @@ thd3 (_, _, z) = z
 --     , show xs 
 --     ]
 -- describeContents [] = " The list is empty "    
+
+--------------------------------------
+-- 14.Oct.2023
+
+
+
+
