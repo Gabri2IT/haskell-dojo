@@ -93,7 +93,7 @@ h1 : (_ : (_ : (_ :t))) = party
 
 
 
-x :y = [ "abc", "def","ghi", "pqr" ]
+-- x : y = [ "abc", "def","ghi", "pqr" ]
 
 x : y = [7]  -- y is []
 
