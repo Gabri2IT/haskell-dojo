@@ -6,22 +6,33 @@ import TTT.A2
 
 -- Q#01
 
-showInts = undefined
+showInts :: [Int] -> [String]
+showInts (i : is) = show i : showInts is
+showInts [] = []
 
-_HEADER_ = undefined
+_HEADER_ :: String
+_HEADER_ = ' ' : formatLine (showInts _RANGE_)
 
 -- Q#02
 
-showSquares = undefined
+showSquares :: [Square] -> [String]
+showSquares (s : ss) = showSquare s : showSquares ss
+showSquares [] = []
 
 -- Q#03
 
-formatRows = undefined
+formatRows :: [Row] -> [String]
+formatRows (r : rs) = formatLine (showSquares r) : formatRows rs
+formatRows [] = []
 
 -- Q#04
 
-isColEmpty = undefined
-
+isColEmpty :: Row -> Int -> Bool
+isColEmpty [] _ = False
+isColEmpty (c : _) 0 = c == E
+isColEmpty (_ : cs) j
+  | j > 0 = isColEmpty cs (j - 1)
+  | otherwise = False
 -- Q#05
 
 dropFirstCol = undefined
